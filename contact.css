@@ -1,0 +1,117 @@
+body {    font-family: Arial, sans-serif;
+    margin: 0;    padding: 0;
+    background-color: white;    background-image: url('./img/градиент\ 2.jpg');
+    background-size: no-repeat;    background-position: center; background-size: cover; 
+    color: black; text-align: center; 
+  }
+.header {
+    background-color: rgb(255, 255, 255);    padding: 20px;
+    color: rgb(228, 127, 32);    text-align: center;
+}
+.welcome{
+    padding: 20px;
+}
+.a{
+    padding: 20px;
+    font-size: 20px;
+    margin-top: -35px;
+    text-decoration: none;
+}
+.a a{
+    color: rgb(0, 0, 0);
+    padding: 5px 1px;    text-decoration: none;
+    display: inline-block;
+}
+.a a:hover {    color: black;
+    background-color: rgba(172, 255, 47, 0.341);
+}
+.image{
+    padding: 20px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.navigator {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.navigator a {
+    padding: 14px 24px;
+    background-color: #ff9800; /* ярко-оранжевый */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.navigator a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.15);
+    transition: height 0.3s ease;
+    z-index: 0;
+}
+
+.navigator a:hover::after {
+    height: 100%;
+}
+
+.navigator a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 152, 0, 0.5);
+}
+
+.navigator a:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 8px rgba(255, 152, 0, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+  .navigator a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .product-slider {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+
+  .image img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .a a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .welcome h2, .welcome h1 {
+    font-size: 1.2em;
+  }
+}
